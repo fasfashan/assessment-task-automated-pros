@@ -370,3 +370,63 @@ body {
     }
   }
 }
+.our-partners-section {
+  padding-top: 166px;
+  align-items: center;
+  row-gap: 80px;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  .our-partners-point-wrapper {
+    grid-column: 12 span / 12 span;
+    display: flex;
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+    }
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 110px;
+    gap: 80px;
+    .our-partners-point {
+      display: flex;
+      h4 {
+        font-size: $text-4xl;
+        font-weight: 800;
+      }
+      p {
+        font-size: $text-lg;
+        color: $text-gray;
+      }
+      flex-direction: column;
+      gap: 24px;
+      img {
+        max-width: 218px;
+        margin: auto;
+      }
+    }
+  }
+  .our-partners-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    grid-column: 12 span / 12 span;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+
+    h1 {
+      font-size: $text-6xl;
+      font-weight: 800;
+    }
+    h2 {
+      font-size: $text-lg;
+      color: $primary-color;
+      text-transform: uppercase;
+
+      font-weight: 700;
+    }
+    p {
+      color: $text-gray;
+      font-size: $text-lg;
+    }
+  }
+}
