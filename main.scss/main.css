@@ -85,22 +85,85 @@ ol {
   margin-bottom: 0 !important;
 }
 
+@font-face {
+  font-family: "Metropolis";
+  src: url("../fonts/metropolis.regular.otf") format("woff2"), url("../fonts/metropolis.regular.otf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Metropolis";
+  src: url("../fonts/metropolis.medium.otf") format("woff2"), url("../fonts/metropolis.medium.otf") format("woff");
+  font-weight: 600;
+  font-style: medium;
+}
+@font-face {
+  font-family: "Metropolis";
+  src: url("../fonts/metropolis.semi-bold.otf") format("woff2"), url("../fonts/metropolis.semi-bold.otf") format("woff");
+  font-weight: 700;
+  font-style: semibold;
+}
+@font-face {
+  font-family: "Metropolis";
+  src: url("../fonts/metropolis.extra-bold.otf") format("woff2"), url("../fonts/metropolis.extra-bold.otf") format("woff");
+  font-weight: 900;
+  font-style: extrabold;
+}
+body {
+  font-family: "Metropolis", sans-serif !important;
+}
+
 .hero-section {
+  overflow-x: hidden;
   background-color: #fafafa;
   padding-top: 70px;
   padding-bottom: 107px;
 }
-.hero-section .container-xxl .row {
-  align-items: center;
+.hero-section .container-xxl {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: 32px;
+}
+.hero-section .container-xxl .content-text {
+  grid-column: span 7/span 7;
+}
+.hero-section .container-xxl .hero-images {
+  grid-column: span 5/span 5;
+  position: relative;
+}
+.hero-section .container-xxl .hero-images .card-1 {
+  max-width: 45%;
+  position: absolute;
+  bottom: 88px;
+  left: -18px;
+  border-radius: 16px;
+}
+.hero-section .container-xxl .hero-images .card-2 {
+  max-width: 55%;
+  position: absolute;
+  bottom: 46px;
+  right: -22px;
+  border-radius: 16px;
 }
 .hero-section h1 {
   font-size: 62px;
-  font-weight: 700;
+  font-weight: 900;
+  margin-bottom: 16px;
 }
 .hero-section h2 {
   font-size: 18px;
   color: #ff5634;
   text-transform: uppercase;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+.hero-section p {
+  color: #656565;
+  font-size: 18px;
+  max-width: 590px;
+}
+.hero-section .images {
+  position: relative;
 }
 
 /*# sourceMappingURL=main.css.map */
