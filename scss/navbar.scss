@@ -1,0 +1,43 @@
+@import "variable";
+@import "button-mixin.scss";
+nav {
+  .menu {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+  }
+  background-color: $white;
+  box-shadow: $shadow-xl;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid $border-color;
+  .container-xxl {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  ul {
+    display: flex;
+    list-style: none;
+    gap: 26px;
+    font-size: $text-base;
+    a {
+      font-style: normal;
+      color: $black;
+      text-decoration: none;
+    }
+    a.active {
+      color: $primary-color;
+    }
+  }
+  .button {
+    display: flex;
+    gap: 18px;
+    .button-secondary {
+      @include button-secondary-small;
+    }
+    .button-primary {
+      @include button-primary-small;
+    }
+  }
+}

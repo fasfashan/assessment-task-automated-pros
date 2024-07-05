@@ -68,37 +68,4 @@ nav .button .button-primary {
 }
 nav .button .button-primary:hover {
   background-color: #e13f1f;
-}
-
-a {
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
-}
-
-dl,
-ul,
-ol {
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
-}
-
-.hero-section {
-  background-color: #fafafa;
-  padding-top: 70px;
-  padding-bottom: 107px;
-}
-.hero-section .container-xxl .row {
-  align-items: center;
-}
-.hero-section h1 {
-  font-size: 62px;
-  font-weight: 700;
-}
-.hero-section h2 {
-  font-size: 18px;
-  color: #ff5634;
-  text-transform: uppercase;
-}/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=navbar.css.map */

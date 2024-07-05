@@ -1,3 +1,31 @@
-body {
-  background-color: red;
+@import "navbar.scss";
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+dl,
+ul,
+ol {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.hero-section {
+  .container-xxl .row {
+    align-items: center;
+  }
+  background-color: $section-background;
+  padding-top: 70px;
+  padding-bottom: 107px;
+  h1 {
+    font-size: $text-7xl;
+    font-weight: 700;
+  }
+  h2 {
+    font-size: $text-lg;
+    color: $primary-color;
+    text-transform: uppercase;
+  }
 }
