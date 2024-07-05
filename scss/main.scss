@@ -1,6 +1,6 @@
 @import "navbar.scss";
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 ul {
   list-style: none;
@@ -290,10 +290,10 @@ body {
   background-color: $section-background;
   overflow: visible;
   margin-top: 166px;
-}
-.our-journey-section {
   padding-top: 166px;
   padding-bottom: 200px;
+}
+.our-journey-section {
   overflow: visible;
   row-gap: 180px;
   display: grid;
@@ -351,7 +351,7 @@ body {
     position: -webkit-sticky;
     top: 160px;
 
-    height: 100px;
+    height: fit-content;
     h1 {
       font-size: $text-5xl;
       font-weight: 800;
@@ -372,6 +372,7 @@ body {
 }
 .our-partners-section {
   padding-top: 166px;
+  padding-bottom: 166px;
   align-items: center;
   row-gap: 80px;
   display: grid;
@@ -427,6 +428,89 @@ body {
     p {
       color: $text-gray;
       font-size: $text-lg;
+    }
+  }
+}
+.press-news-section {
+  padding-top: 166px;
+  padding-bottom: 166px;
+  border-bottom: 1px solid #c5c5c5;
+  margin-bottom: 200px;
+  align-items: center;
+  row-gap: 80px;
+  background-color: $section-background;
+  .press-news-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    grid-column: 12 span / 12 span;
+    max-width: 620px;
+    margin: auto;
+    text-align: center;
+
+    h1 {
+      font-size: $text-6xl;
+      font-weight: 800;
+    }
+    h2 {
+      font-size: $text-lg;
+      color: $primary-color;
+      text-transform: uppercase;
+
+      font-weight: 700;
+    }
+    p {
+      color: $text-gray;
+      font-size: $text-lg;
+    }
+  }
+  .press-news-card-wrapper {
+    display: grid;
+    margin-top: 64px;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    row-gap: 28px;
+    column-gap: 28px;
+    .press-news-card {
+      img {
+        max-width: 50%;
+      }
+      h2 {
+        font-size: $text-4xl;
+        color: $black;
+        font-weight: 800;
+      }
+      p {
+        color: $primary-color;
+        text-transform: capitalize;
+        font-size: $text-lg;
+        font-weight: 700;
+      }
+      span {
+        color: $text-gray;
+        text-transform: capitalize;
+        font-size: $text-lg;
+      }
+      box-shadow: $shadow-md;
+      &:hover {
+        box-shadow: $shadow-lg;
+        transition: all 0.3s ease;
+        transform: translateY(-5px);
+      }
+      border-radius: 24px;
+      padding: 98px 66px;
+      transition: all 0.3s ease;
+      background-color: $white;
+      grid-column: 6 span / 6 span;
+      @media screen and (max-width: 768px) {
+        grid-column: 12 span / 12 span;
+      }
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      .press-news-card-cta {
+        display: flex;
+        justify-content: space-between;
+      }
     }
   }
 }
