@@ -168,6 +168,16 @@ body {
   font-family: "Metropolis", sans-serif !important;
 }
 
+.container {
+  overflow: visible;
+}
+@media (max-width: 768px) {
+  .container {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}
+
 .hero-section {
   overflow-x: hidden;
   background-color: #fafafa;
@@ -363,6 +373,92 @@ body {
   font-weight: 700;
 }
 .our-mission-section .our-mission-content p {
+  color: #656565;
+  font-size: 18px;
+  max-width: 590px;
+}
+
+.our-journey {
+  background-color: #fafafa;
+  overflow: visible;
+  margin-top: 166px;
+}
+
+.our-journey-section {
+  padding-top: 166px;
+  padding-bottom: 200px;
+  overflow: visible;
+  row-gap: 180px;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+.our-journey-section .card-wrapper {
+  grid-column: 6 span/6 span;
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+}
+@media (max-width: 768px) {
+  .our-journey-section .card-wrapper {
+    grid-column: 12 span/12 span;
+  }
+}
+.our-journey-section .card-journey {
+  box-shadow: 0 14px 42px 0 rgba(16, 16, 16, 0.08);
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 60px 53px;
+}
+.our-journey-section .card-journey h1 {
+  font-size: 28px;
+  font-weight: 800;
+}
+.our-journey-section .card-journey h2 {
+  font-size: 22px;
+  color: #ff5634;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.our-journey-section .card-journey p {
+  color: #656565;
+  font-size: 18px;
+  max-width: 590px;
+}
+.our-journey-section .our-journey-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  grid-column: 6 span/6 span;
+  max-width: 480px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 160px;
+  height: 100px;
+}
+@media (max-width: 768px) {
+  .our-journey-section .our-journey-content {
+    grid-column: 12 span/12 span;
+  }
+}
+@media (max-width: 768px) {
+  .our-journey-section .our-journey-content {
+    position: relative;
+    height: unset;
+  }
+}
+.our-journey-section .our-journey-content h1 {
+  font-size: 44px;
+  font-weight: 800;
+}
+.our-journey-section .our-journey-content h2 {
+  font-size: 18px;
+  color: #ff5634;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.our-journey-section .our-journey-content p {
   color: #656565;
   font-size: 18px;
   max-width: 590px;

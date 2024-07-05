@@ -96,6 +96,13 @@ p {
 body {
   font-family: "Metropolis", sans-serif !important;
 }
+.container {
+  overflow: visible;
+  @media (max-width: 768px) {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}
 .hero-section {
   .hero-section-content {
     display: grid;
@@ -261,6 +268,90 @@ body {
     grid-column: 6 span / 6 span;
     max-width: 480px;
 
+    h1 {
+      font-size: $text-5xl;
+      font-weight: 800;
+    }
+    h2 {
+      font-size: $text-lg;
+      color: $primary-color;
+      text-transform: uppercase;
+
+      font-weight: 700;
+    }
+    p {
+      color: $text-gray;
+      font-size: $text-lg;
+      max-width: 590px;
+    }
+  }
+}
+.our-journey {
+  background-color: $section-background;
+  overflow: visible;
+  margin-top: 166px;
+}
+.our-journey-section {
+  padding-top: 166px;
+  padding-bottom: 200px;
+  overflow: visible;
+  row-gap: 180px;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  .card-wrapper {
+    grid-column: 6 span / 6 span;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    @media (max-width: 768px) {
+      grid-column: 12 span / 12 span;
+    }
+  }
+  .card-journey {
+    h1 {
+      font-size: $text-4xl;
+      font-weight: 800;
+    }
+    h2 {
+      font-size: $text-2xl;
+      color: $primary-color;
+      text-transform: uppercase;
+
+      font-weight: 700;
+    }
+    p {
+      color: $text-gray;
+      font-size: $text-lg;
+      max-width: 590px;
+    }
+
+    box-shadow: $shadow-md;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 60px 53px;
+  }
+  .our-journey-content {
+    @media (max-width: 768px) {
+      grid-column: 12 span / 12 span;
+    }
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    grid-column: 6 span / 6 span;
+    max-width: 480px;
+    @media (max-width: 768px) {
+      position: relative;
+      height: unset;
+    }
+    position: sticky;
+
+    position: -webkit-sticky;
+    top: 160px;
+
+    height: 100px;
     h1 {
       font-size: $text-5xl;
       font-weight: 800;
