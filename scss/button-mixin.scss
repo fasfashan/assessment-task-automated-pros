@@ -12,7 +12,7 @@
   text-align: center;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: $shadow-md;
+  box-shadow: $shadow-xl;
 
   &:hover {
     background-color: $primary-color;
@@ -50,6 +50,7 @@
   text-decoration: none;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 4px;
   text-align: center;
   cursor: pointer;
