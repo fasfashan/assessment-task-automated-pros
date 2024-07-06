@@ -1,4 +1,5 @@
 @import "navbar.scss";
+@import "button-mixin.scss";
 a {
   text-decoration: none !important;
 }
@@ -435,7 +436,7 @@ body {
   padding-top: 166px;
   padding-bottom: 166px;
   border-bottom: 1px solid #c5c5c5;
-  margin-bottom: 200px;
+
   align-items: center;
   row-gap: 80px;
   background-color: $section-background;
@@ -511,6 +512,43 @@ body {
         display: flex;
         justify-content: space-between;
       }
+    }
+  }
+}
+.call-to-action-section {
+  display: flex;
+  @media screen and (max-width: 768px) {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 70px;
+  padding-bottom: 83px;
+  border-bottom: 1px solid $border-color;
+  .logo {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    img {
+      max-width: 30%;
+      @media screen and (max-width: 768px) {
+        max-width: 40%;
+      }
+    }
+    p {
+      max-width: 450px;
+      font-size: $text-lg;
+      color: $text-gray;
+    }
+  }
+  .button {
+    display: flex;
+    flex-direction: wrap;
+    gap: 20px;
+    .button-primary {
+      @include button-primary-big;
     }
   }
 }

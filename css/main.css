@@ -531,7 +531,6 @@ body {
   padding-top: 166px;
   padding-bottom: 166px;
   border-bottom: 1px solid #c5c5c5;
-  margin-bottom: 200px;
   align-items: center;
   row-gap: 80px;
   background-color: #fafafa;
@@ -610,4 +609,62 @@ body {
 .press-news-section .press-news-card-wrapper .press-news-card .press-news-card-cta {
   display: flex;
   justify-content: space-between;
+}
+
+.call-to-action-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 70px;
+  padding-bottom: 83px;
+  border-bottom: 1px solid #ededed;
+}
+@media screen and (max-width: 768px) {
+  .call-to-action-section {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+}
+.call-to-action-section .logo {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.call-to-action-section .logo img {
+  max-width: 30%;
+}
+@media screen and (max-width: 768px) {
+  .call-to-action-section .logo img {
+    max-width: 40%;
+  }
+}
+.call-to-action-section .logo p {
+  max-width: 450px;
+  font-size: 18px;
+  color: #656565;
+}
+.call-to-action-section .button {
+  display: flex;
+  flex-direction: wrap;
+  gap: 20px;
+}
+.call-to-action-section .button .button-primary {
+  display: inline-block;
+  padding: 24px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #ff5634;
+  border: 1px solid #ededed;
+  border-radius: 14px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.call-to-action-section .button .button-primary:hover {
+  background-color: #e13f1f;
 }/*# sourceMappingURL=main.css.map */
