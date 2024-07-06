@@ -77,6 +77,7 @@ a {
 
 ul {
   list-style: none;
+  padding-left: 0px !important;
 }
 
 * {
@@ -650,8 +651,9 @@ body {
 }
 .call-to-action-section .button .button-primary {
   display: inline-block;
-  padding: 24px;
-  font-size: 16px;
+  padding: 20px;
+  font-size: 20px;
+  text-wrap: nowrap;
   font-weight: 600;
   color: #fff;
   background-color: #ff5634;
@@ -667,4 +669,149 @@ body {
 }
 .call-to-action-section .button .button-primary:hover {
   background-color: #e13f1f;
+}
+
+footer {
+  padding-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+footer .menu {
+  grid-column: 3 span/3 span;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+@media screen and (max-width: 768px) {
+  footer .menu {
+    grid-column: 6 span/6 span;
+  }
+}
+footer .menu h3 {
+  font-size: 22px;
+  font-weight: 800;
+}
+footer .menu .list {
+  display: flex;
+  gap: 40px;
+}
+footer .menu .list li {
+  font-size: 20px;
+  padding-bottom: 8px;
+  color: #656565;
+}
+@media screen and (max-width: 768px) {
+  footer .menu .list li {
+    font-size: 16px;
+  }
+}
+footer .menu .list li:hover {
+  color: #ff5634;
+}
+footer .menu .list li a {
+  color: #ff5634;
+  font-weight: 800;
+  border-bottom: 4px solid #ff5634;
+}
+footer .menu .list li a:hover {
+  color: #000;
+  border-bottom: 4px solid #000;
+}
+footer .menu .country-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+footer .menu .country-wrapper .country {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+footer .menu .country-wrapper .country h4 {
+  font-size: 20px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+footer .menu .country-wrapper .country img {
+  border-radius: 24px;
+}
+footer .country-menu {
+  grid-column: 6 span/6 span;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+@media screen and (max-width: 768px) {
+  footer .country-menu {
+    grid-column: 12 span/12 span;
+  }
+}
+footer .country-menu h3 {
+  font-size: 22px;
+  font-weight: 800;
+}
+footer .country-menu .list {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+}
+footer .country-menu .list li {
+  font-size: 20px;
+  padding-bottom: 8px;
+  color: #656565;
+}
+footer .country-menu .list li:hover {
+  color: #ff5634;
+}
+@media screen and (max-width: 768px) {
+  footer .country-menu .list li {
+    font-size: 16px;
+  }
+}
+footer .country-menu .list li a {
+  color: #ff5634;
+  font-weight: 800;
+  border-bottom: 4px solid #ff5634;
+}
+footer .country-menu .list li a:hover {
+  color: #000;
+  border-bottom: 4px solid #000;
+}
+footer .country-menu .country-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 20px;
+}
+@media screen and (max-width: 768px) {
+  footer .country-menu .country-wrapper {
+    flex-direction: column;
+  }
+}
+footer .country-menu .country-wrapper .country {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+footer .country-menu .country-wrapper .country h4 {
+  font-size: 20px;
+  font-weight: 800;
+}
+footer .country-menu .country-wrapper .country img {
+  border-radius: 24px;
+}
+footer .copyright {
+  text-align: center;
+  grid-column: 12 span/12 span;
+  padding: 32px;
+  border-top: 1px solid #ededed;
+  margin-top: 100px;
+}
+footer .copyright p {
+  font-size: 20px;
+}
+footer .copyright a {
+  color: #ff5634;
+}
+footer .copyright a:hover {
+  color: #000;
 }/*# sourceMappingURL=main.css.map */

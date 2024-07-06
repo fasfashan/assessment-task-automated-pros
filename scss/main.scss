@@ -5,6 +5,7 @@ a {
 }
 ul {
   list-style: none;
+  padding-left: 0px !important;
 }
 * {
   margin: 0;
@@ -549,6 +550,143 @@ body {
     gap: 20px;
     .button-primary {
       @include button-primary-big;
+    }
+  }
+}
+footer {
+  padding-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  .menu {
+    grid-column: 3 span / 3 span;
+    @media screen and (max-width: 768px) {
+      grid-column: 6 span / 6 span;
+    }
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    h3 {
+      font-size: $text-2xl;
+      font-weight: 800;
+    }
+    .list {
+      display: flex;
+      gap: 40px;
+      li {
+        font-size: $text-xl;
+        @media screen and (max-width: 768px) {
+          font-size: $text-base;
+        }
+        padding-bottom: 8px;
+        color: $text-gray;
+        &:hover {
+          color: $primary-color;
+        }
+      }
+      li a {
+        color: $primary-color;
+        font-weight: 800;
+        border-bottom: 4px solid $primary-color;
+        &:hover {
+          color: $black;
+          border-bottom: 4px solid $black;
+        }
+      }
+    }
+    .country-wrapper {
+      display: flex;
+      justify-content: space-between;
+      .country {
+        display: flex;
+        gap: 18px;
+        align-items: center;
+        h4 {
+          font-size: $text-xl;
+          font-weight: 800;
+          white-space: nowrap;
+        }
+        img {
+          border-radius: 24px;
+        }
+      }
+    }
+  }
+  .country-menu {
+    grid-column: 6 span / 6 span;
+    @media screen and (max-width: 768px) {
+      grid-column: 12 span / 12 span;
+    }
+    display: flex;
+
+    flex-direction: column;
+    gap: 40px;
+
+    h3 {
+      font-size: $text-2xl;
+      font-weight: 800;
+    }
+    .list {
+      display: flex;
+      gap: 40px;
+      justify-content: space-between;
+      li {
+        font-size: $text-xl;
+        padding-bottom: 8px;
+        color: $text-gray;
+        &:hover {
+          color: $primary-color;
+        }
+        @media screen and (max-width: 768px) {
+          font-size: $text-base;
+        }
+      }
+      li a {
+        color: $primary-color;
+        font-weight: 800;
+        border-bottom: 4px solid $primary-color;
+        &:hover {
+          color: $black;
+          border-bottom: 4px solid $black;
+        }
+      }
+    }
+    .country-wrapper {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+      }
+      gap: 20px;
+      .country {
+        display: flex;
+        gap: 18px;
+        align-items: center;
+        h4 {
+          font-size: $text-xl;
+          font-weight: 800;
+        }
+        img {
+          border-radius: 24px;
+        }
+      }
+    }
+  }
+  .copyright {
+    text-align: center;
+    grid-column: 12 span / 12 span;
+    padding: 32px;
+    border-top: 1px solid $border-color;
+    margin-top: 100px;
+    p {
+      font-size: $text-xl;
+    }
+    a {
+      color: $primary-color;
+      &:hover {
+        color: $black;
+      }
     }
   }
 }

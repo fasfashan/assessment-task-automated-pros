@@ -39,9 +39,9 @@
 }
 @mixin button-primary-big {
   display: inline-block;
-  padding: 24px;
-  font-size: $text-base;
-  width: 100%;
+  padding: 20px;
+  font-size: $text-xl;
+  text-wrap: nowrap;
   font-weight: 600;
   color: $white;
   background-color: $primary-color;
