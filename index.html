@@ -11,28 +11,84 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- NAVBAR -->
-    <nav class="container">
-      <img src="assets/images/logo.svg" alt="" />
-      <div class="menu">
-        <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Pricing</li>
-          <li>Pages</li>
-          <li>Cart(0)</li>
-          <a class="button-primary get-started" href="">Get started</a>
-        </ul>
-        <div class="cta">
-          <a class="button-secondary" href="">Download App</a>
-          <a class="button-primary" href="">Register</a>
-        </div>
-        <div class="toggle-menu">
-          <input type="checkbox" />
-          <span></span>
-          <span></span>
+    <nav class="shadow-lg fixed-top" id="navbar">
+      <div class="container">
+        <img src="assets/images/logo.svg" alt="" />
+        <div class="menu">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Pricing</li>
+            <li class="menu-dropdown">
+              <div class="big-menu">
+                <div class="list">
+                  <h2>Menu</h2>
+                  <div class="list-menu">
+                    <ul>
+                      <li>Home</li>
+                      <li>About</li>
+                      <li>Contact</li>
+                      <li>Blog</li>
+                      <li>Blog Post</li>
+                    </ul>
+                    <ul>
+                      <li>Plan</li>
+                      <li>Plans Single</li>
+                      <li>Register</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="list">
+                  <h2>Utility Pages</h2>
+                  <div class="list-menu">
+                    <ul>
+                      <li>Start here</li>
+                      <li>Styleguide</li>
+                      <li>Password protected</li>
+                      <li>404 not found</li>
+                      <li>Licenses</li>
+                      <li>Changelog</li>
+                      <li>
+                        <a href="#">Browse More Template</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              Pages
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                class="icon-dropdown"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M5.29289 7.29289C5.68342 6.90237 6.31658 6.90237 6.70711 7.29289L10 10.5858L13.2929 7.29289C13.6834 6.90237 14.3166 6.90237 14.7071 7.29289C15.0976 7.68342 15.0976 8.31658 14.7071 8.70711L10.7071 12.7071C10.3166 13.0976 9.68342 13.0976 9.29289 12.7071L5.29289 8.70711C4.90237 8.31658 4.90237 7.68342 5.29289 7.29289Z"
+                  fill="black"
+                />
+              </svg>
+            </li>
+            <li>Cart(0)</li>
+            <a class="button-primary get-started" href="">Get started</a>
+          </ul>
+
+          <div class="cta">
+            <a class="button-secondary" href="">Download App</a>
+            <a class="button-primary" href="">Register</a>
+          </div>
+          <div class="toggle-menu">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+          </div>
         </div>
       </div>
     </nav>
@@ -50,6 +106,7 @@
         </div>
         <div class="hero-images">
           <img
+            class="hero-image"
             width="100%"
             src="assets/images/image-hero.png"
             alt="Image Hero"
@@ -67,19 +124,19 @@
         </div>
       </div>
       <div class="container social-proof">
-        <div class="social-proof-content">
+        <div data-aos="fade-up" class="social-proof-content">
           <h3>30M<span>+</span></h3>
           <p>Successful deliveries</p>
         </div>
-        <div class="social-proof-content">
+        <div data-aos="fade-up" class="social-proof-content">
           <h3>500<span>k</span></h3>
           <p>Restaurants available</p>
         </div>
-        <div class="social-proof-content">
-          <h3>10<span>+</span></h3>
-          <p>Happy Customers</p>
+        <div data-aos="fade-up" class="social-proof-content">
+          <h3>30<span>M</span></h3>
+          <p>Successful deliveries</p>
         </div>
-        <div class="social-proof-content">
+        <div data-aos="fade-up" class="social-proof-content">
           <h3>99.9<span>%</span></h3>
           <p>Customer satisfaction</p>
         </div>
@@ -89,6 +146,7 @@
     <!-- ABOUT US SECTION -->
     <section class="container about-section">
       <img
+        data-aos="zoom-in"
         src="assets/images/about-us-section.jpeg"
         alt="About Us Section Image"
       />
@@ -122,6 +180,7 @@
         </p>
       </div>
       <img
+        data-aos="zoom-in"
         src="assets/images/our-mission-section.jpeg"
         alt="About Us Section Image"
       />
@@ -140,7 +199,7 @@
           </p>
         </div>
         <div class="card-wrapper">
-          <div class="card-journey">
+          <div data-aos="zoom-in" class="card-journey">
             <h2>2016</h2>
             <h1>Deliver X was founded</h1>
             <p>
@@ -150,7 +209,7 @@
               dicta sunt explicabo. Nemo enim ipsam.
             </p>
           </div>
-          <div class="card-journey">
+          <div data-aos="zoom-in" class="card-journey">
             <h2>2018</h2>
             <h1>Raised Series A at $50M valuation</h1>
             <p>
@@ -160,7 +219,7 @@
               dicta sunt explicabo. Nemo enim ipsam.
             </p>
           </div>
-          <div class="card-journey">
+          <div data-aos="zoom-in" class="card-journey">
             <h2>2019</h2>
             <h1>Raised Series B at $600M valuation</h1>
             <p>
@@ -170,7 +229,7 @@
               dicta sunt explicabo. Nemo enim ipsam.
             </p>
           </div>
-          <div class="card-journey">
+          <div data-aos="zoom-in" class="card-journey">
             <h2>2022</h2>
             <h1>Raised Series C at $3B valuation</h1>
             <p>
@@ -196,7 +255,7 @@
         </p>
       </div>
       <div class="our-partners-point-wrapper">
-        <div class="our-partners-point">
+        <div data-aos="fade-up" class="our-partners-point">
           <img src="assets/images/customersvg.svg" alt="" />
           <h4>Customers</h4>
           <p>
@@ -204,7 +263,7 @@
             phasellus mollis sit aliquam sit nullam.
           </p>
         </div>
-        <div class="our-partners-point">
+        <div data-aos="fade-up" class="our-partners-point">
           <img src="assets/images/restaurants.svg" alt="" />
           <h4>Restaurants</h4>
           <p>
@@ -212,7 +271,7 @@
             phasellus mollis sit aliquam sit nullam.
           </p>
         </div>
-        <div class="our-partners-point">
+        <div data-aos="fade-up" class="our-partners-point">
           <img src="assets/images/riders.svg" alt="" />
           <h4>Riders</h4>
           <p>
@@ -226,41 +285,107 @@
     <!-- OUR PARTNERS SECTION -->
     <section class="press-news-section">
       <div class="container">
-        <div class="press-news-content">
+        <div data-aos="zoom-in" class="press-news-content">
           <h2>PRESS & NEWS</h2>
           <h1>See what the press says about Deliver X</h1>
         </div>
-        <div class="press-news-card-wrapper">
+        <div data-aos="zoom-in" class="press-news-card-wrapper">
           <a href="#" class="press-news-card">
             <img src="assets/images/company.svg" alt="company 1" />
             <h2>Deliver X raises $26M in series B funding for growth</h2>
             <div class="press-news-card-cta">
-              <p>read more</p>
+              <div class="d-flex g-5">
+                <p>read more</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M10.4645 10.0502C10.4645 9.49794 10.9122 9.05023 11.4645 9.05023L19.9498 9.05023C20.5021 9.05023 20.9498 9.49794 20.9498 10.0502L20.9498 18.5355C20.9498 19.0878 20.5021 19.5355 19.9498 19.5355C19.3975 19.5355 18.9498 19.0878 18.9498 18.5355L18.9498 12.4644L10.7574 20.6568C10.3669 21.0474 9.73372 21.0474 9.34319 20.6568C8.95267 20.2663 8.95267 19.6331 9.34319 19.2426L17.5356 11.0502L11.4645 11.0502C10.9122 11.0502 10.4645 10.6025 10.4645 10.0502Z"
+                    fill="#ff5634"
+                  />
+                </svg>
+              </div>
               <span>22 January, 2023</span>
             </div>
           </a>
           <a href="#" class="press-news-card">
-            <img src="assets/images/company.svg" alt="company 1" />
-            <h2>Deliver X raises $26M in series B funding for growth</h2>
+            <img src="assets/images/company-2.svg" alt="company 1" />
+            <h2>
+              DDeliver X claims to be the #1 player in the delivery industry
+            </h2>
             <div class="press-news-card-cta">
-              <p>read more</p>
-              <span>22 January, 2023</span>
+              <div class="d-flex g-5">
+                <p>read more</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M10.4645 10.0502C10.4645 9.49794 10.9122 9.05023 11.4645 9.05023L19.9498 9.05023C20.5021 9.05023 20.9498 9.49794 20.9498 10.0502L20.9498 18.5355C20.9498 19.0878 20.5021 19.5355 19.9498 19.5355C19.3975 19.5355 18.9498 19.0878 18.9498 18.5355L18.9498 12.4644L10.7574 20.6568C10.3669 21.0474 9.73372 21.0474 9.34319 20.6568C8.95267 20.2663 8.95267 19.6331 9.34319 19.2426L17.5356 11.0502L11.4645 11.0502C10.9122 11.0502 10.4645 10.6025 10.4645 10.0502Z"
+                    fill="#ff5634"
+                  />
+                </svg>
+              </div>
+              <span>Nov 15, 2023</span>
             </div>
           </a>
           <a href="#" class="press-news-card">
-            <img src="assets/images/company.svg" alt="company 1" />
-            <h2>Deliver X raises $26M in series B funding for growth</h2>
+            <img src="assets/images/company-3.svg" alt="company 1" />
+            <h2>Introducing curbside ordering with Deliver X</h2>
             <div class="press-news-card-cta">
-              <p>read more</p>
-              <span>22 January, 2023</span>
+              <div class="d-flex g-5">
+                <p>read more</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M10.4645 10.0502C10.4645 9.49794 10.9122 9.05023 11.4645 9.05023L19.9498 9.05023C20.5021 9.05023 20.9498 9.49794 20.9498 10.0502L20.9498 18.5355C20.9498 19.0878 20.5021 19.5355 19.9498 19.5355C19.3975 19.5355 18.9498 19.0878 18.9498 18.5355L18.9498 12.4644L10.7574 20.6568C10.3669 21.0474 9.73372 21.0474 9.34319 20.6568C8.95267 20.2663 8.95267 19.6331 9.34319 19.2426L17.5356 11.0502L11.4645 11.0502C10.9122 11.0502 10.4645 10.6025 10.4645 10.0502Z"
+                    fill="#ff5634"
+                  />
+                </svg>
+              </div>
+              <span>Sep 18, 2022</span>
             </div>
           </a>
           <a href="#" class="press-news-card">
-            <img src="assets/images/company.svg" alt="company 1" />
-            <h2>Deliver X raises $26M in series B funding for growth</h2>
+            <img src="assets/images/company-4.svg" alt="company 1" />
+            <h2>Introducing the Square POS integration with Deliver X</h2>
             <div class="press-news-card-cta">
-              <p>read more</p>
-              <span>22 January, 2023</span>
+              <div class="d-flex g-5">
+                <p>read more</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M10.4645 10.0502C10.4645 9.49794 10.9122 9.05023 11.4645 9.05023L19.9498 9.05023C20.5021 9.05023 20.9498 9.49794 20.9498 10.0502L20.9498 18.5355C20.9498 19.0878 20.5021 19.5355 19.9498 19.5355C19.3975 19.5355 18.9498 19.0878 18.9498 18.5355L18.9498 12.4644L10.7574 20.6568C10.3669 21.0474 9.73372 21.0474 9.34319 20.6568C8.95267 20.2663 8.95267 19.6331 9.34319 19.2426L17.5356 11.0502L11.4645 11.0502C10.9122 11.0502 10.4645 10.6025 10.4645 10.0502Z"
+                    fill="#ff5634"
+                  />
+                </svg>
+              </div>
+              <span>Mar 12, 2022</span>
             </div>
           </a>
         </div>
@@ -391,11 +516,47 @@
         </p>
       </div>
     </footer>
+    <!-- CUSTOM JS -->
     <script type="text/javascript" src="js/main.js"></script>
+    <!-- CUSTOM JS -->
+    <!-- BOOSTRAP -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <!-- BOOSTRAP -->
+    <!-- GSAP ANIMATION -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script>
+      gsap.from("nav .container", { duration: 1, y: -100, opacity: 0 });
+      gsap.from(".hero-section-content .content-text", {
+        duration: 1,
+        delay: 0.5,
+        y: 100,
+        opacity: 0,
+      });
+      gsap.from(".hero-image", {
+        duration: 1,
+        delay: 0.5,
+        scale: 0,
+      });
+      gsap.to(".card-1", {
+        scrollTrigger: ".box",
+        y: 30,
+      });
+      gsap.to(".card-2", {
+        scrollTrigger: ".box",
+        y: -30,
+      });
+    </script>
+    <!-- GSAP ANIMATION -->
+    <!-- AOS ANIMATION -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- AOS ANIMATION -->
   </body>
 </html>
